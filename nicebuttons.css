@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(15, 15, 15);
+}
+
+h1{
+  font-size: 3rem;
+}
+input {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  color: white;
+  background-color: rgb(30, 30, 30);
+}
+input:hover {
+  background-color: rgb(50, 50, 50);
+  cursor: pointer;
+}
+input:active {
+  background-color: white;
+  color: black;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  gap: 0.25rem;
+  padding: 0.5rem;
+}
+
+.button-container {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(50, 50, 50);
+  box-shadow: 0 2px 1px rgba(255, 255, 255, 0.2);
+  border-radius: 0.3rem;
+}
+
+button {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(15, 15, 15);
+  border: 0;
+  border-radius: inherit;
+}
