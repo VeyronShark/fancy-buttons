@@ -18,9 +18,11 @@ discoGrid.addEventListener('click', () => {
   disco_grid_enabled = !disco_grid_enabled;
   if(disco_grid_enabled){
     discoGrid.value = "Disable Disco Grid";
+    discoGrid.style.border = "1px solid white";
   }
   else {
     discoGrid.value = "Enable Disco Grid";
+    discoGrid.style.border = "1px solid rgba(0, 0, 0, 0)";
   }
 })
 
