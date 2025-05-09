@@ -56,7 +56,7 @@ function changeColorLimited() {
 
   let toBlack = setInterval(() => {
     randomColorArray = randomColorArray.map((colorCode) => {
-      colorCode -= 10;
+      colorCode -= 5;
       if (colorCode < 15){
         colorCode = 15;
       }
@@ -70,5 +70,5 @@ function changeColorLimited() {
       grid.style.boxShadow = "none";
       clearInterval(toBlack);
     }
-  }, 30);
+  }, 35);
 }
