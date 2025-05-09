@@ -1,3 +1,12 @@
+const gridContainer = document.querySelector(".grid");
+for (let i = 0; i < 400; i++){
+  const btnContainer = document.createElement("div");
+  btnContainer.classList.add("button-container");
+  const btn = document.createElement("button");
+  btnContainer.appendChild(btn);
+  gridContainer.appendChild(btnContainer);
+}
+
 function getRandomRgbColor() {
   const value1 = Math.floor(Math.random() * 256);
   const value2 = Math.floor(Math.random() * 256);
@@ -33,7 +42,7 @@ setInterval(() => {
 }, 200);
 
 for (let button of buttons){
-  button.addEventListener('mouseover', changeColorLimited);
+  button.addEventListener('mouseenter', changeColorLimited);
 }
 
 function changeColorLimited() {
